@@ -8,7 +8,7 @@ SCREEN_SIZE = (1920, 1080)
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
 out = cv2.VideoWriter("output.avi", fourcc, 20.0, SCREEN_SIZE)
 
-fps = 60
+fps = 80
 prev = 0
 
 while True:
