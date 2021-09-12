@@ -3,12 +3,12 @@ import numpy as np
 import pyautogui
 import time
 
-SREEN_SIZE = (1920, 1080)
+SCREEN_SIZE = (1920, 1080)
 
-fourcc = cv2.VideoWriter(*"XVID")
-out = cv2.VideoWriter("output.avi", fourcc, 20.0, (SREEN_SIZE))
+fourcc = cv2.VideoWriter_fourcc(*"XVID")
+out = cv2.VideoWriter("output.avi", fourcc, 20.0, SCREEN_SIZE)
 
-fps = 120
+fps = 60
 prev = 0
 
 while True:
